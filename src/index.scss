@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+.text{
+   width:300px;
+   display: flex;
+   height: 40px;
+   justify-content: space-around;
+    #submittion{
+        width: 50px;
+        height: 100%;
+    }
+    #input{
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+#room_container {
+    width: 400px;
+    h1 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+    .room {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        &_field {
+            display: flex;
+            flex-direction: row;
+            &_cell {
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                border-left: 2px solid black;
+                &:first-child {
+                    margin-left: 0;
+                    border-left: none;
+                }
+            }
+            &-number {
+                justify-content: center;
+                min-width: 50px;
+            }
+            &-name {
+                min-width: 220px;
+                padding-left: 10px;
+                justify-content: flex-start;
+            }
+            &-value {
+                width: 100%;
+                padding-left: 30px;
+            }
+        }
+    }
+}
